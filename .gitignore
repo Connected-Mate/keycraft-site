@@ -1,0 +1,6 @@
+node_modules/
+dist/
+proof/
+.DS_Store
+source-assets/
+.preview-root/
