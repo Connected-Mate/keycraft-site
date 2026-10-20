@@ -35,3 +35,13 @@ Les tarifs ne sont pas annoncés. La ficheAppStore6824853207 est connue mais non
 Les deux pages `en/support.html` et `en/privacy.html` ont été ajoutées par l’agent de préparation Store, intégrées comme entrées Vite et vérifiées dans le build final à cinq pages. Liens de langue réciproques ; lang=en ; tous les liens et ressources locaux retournent HTTP200 sous `/keycraft-site/en/`. Pages lisibles aux largeurs393 et320px, sans débordement. Capture `proof/support-english-mobile.png`. Le titre marketing reste français ; les pages de support répondent à la langue principale anglaise du Store.
 
 L’OpenGraph `public/assets/social.png` existe (221Ko), se charge en HTTP200 et contient uniquement une capture propre du héros du site. Le build public complet fait environ1,6Mo, tous thèmes inclus.
+
+## Publication publique vérifiée
+
+Le 20 octobre 2026, le workflow Pages [39397305628](https://github.com/Connected-Mate/keycraft-site/actions/runs/39397305628) a déployé avec succès le commit `fa89294`. HTTPS est imposé. Après la propagation initiale, l’URL publique sans paramètre a été vérifiée : https://connected-mate.github.io/keycraft-site/.
+
+Dans une nouvelle session Browser Hub, les cinq pages publiques (`/`, `privacy.html`, `support.html`, `en/privacy.html`, `en/support.html`) retournent HTTP200 et les titres/langues attendus. Le héros WebGL est initialisé ; les boutons Glass, rotation et pause répondent. Les treize aperçus publics se décodent correctement et la saisie « a » fonctionne dans chacun. Aucun domaine externe n’est sollicité par les ressources de la page. À393px, aucun débordement ni image cassée. Les dix questions du support anglais s’ouvrent et se ferment normalement.
+
+Preuves locales exclues du dépôt : `proof/public-desktop.png`, `proof/public-mobile-collection.png`, `proof/public-en-support.png`. Cette vérification publique utilise Chromium, avec un profil mobile émulé ; elle ne constitue pas un test Safari sur appareil physique.
+
+Une correction documentaire distingue maintenant les designs ayant un bouton d’action nommé des autres designs. Le statut de l’App Store reste « Bientôt sur l’App Store » : un site publié ne signifie pas que l’application est déjà disponible.
